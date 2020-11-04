@@ -8691,6 +8691,7 @@ country_event = {# Boston Massacre
 		}
 		add_political_power = -100
 		set_country_flag = NEE_BOSTON_SUCSESS
+		set_country_flag = NEE_extremist_government
 	}
 	option = {
 		name = newengland.223.b #Something... unexpected happens
