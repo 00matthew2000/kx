@@ -998,6 +998,12 @@ country_event = { # The Provisional Government
 	desc = newengland.20.d
 	picture = GFX_report_event_USA_congress
 	
+	trigger = {
+		NOT = {
+		has_country_flag = NEE_extremist_government
+		}
+	}
+	
 	immediate = { 
 		hidden_effect = {
 			create_country_leader = {# William Averell Harriman
@@ -1188,6 +1194,12 @@ country_event = { # 1940 National Party Primary
 	title = newengland.21.t
 	desc = newengland.21.d
 	picture = GFX_report_event_USA_congress
+	
+	trigger = {
+		NOT = {
+		has_country_flag = NEE_extremist_government
+		}
+	}
 
 	is_triggered_only = yes
 
@@ -1410,6 +1422,12 @@ country_event = { # 1940 Election
 	title = newengland.24.t
 	desc = newengland.24.d
 	picture = GFX_report_event_USA_congress
+	
+	trigger = {
+		NOT = {
+		has_country_flag = NEE_extremist_government
+		}
+	}
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -1774,6 +1792,9 @@ country_event = { # 1944 National Party Primary
 		NOT = {
 			has_country_flag = NEE_had_1944_election
 		}
+		NOT = {
+		has_country_flag = NEE_extremist_government
+		}
 	}
 
 	mean_time_to_happen = {
@@ -2015,6 +2036,9 @@ country_event = { # 1944 election
 		has_country_flag = NEE_had_1940_election
 		NOT = {
 			has_country_flag = NEE_had_1944_election
+		}
+		NOT = {
+		has_country_flag = NEE_extremist_government
 		}
 	}
 
@@ -2301,6 +2325,9 @@ country_event = { # 1948 Liberal Primary
 		has_country_flag = NEE_had_1944_election
 		NOT = {
 			has_country_flag = NEE_had_1948_election
+		}
+		NOT = {
+		has_country_flag = NEE_extremist_government
 		}
 	}
 
@@ -6279,6 +6306,7 @@ country_event = { # Feds appointed
 	option = { # John Jacob Astor
 		name = newengland.107.a
 		set_country_flag = NEE_FEDS_APPOINTED
+		set_country_flag = NEE_extremist_government
 		add_political_power = 35
 		add_stability = -0.03
 		add_manpower = 500
@@ -6309,6 +6337,7 @@ country_event = { # Feds appointed
 	option = { # Vincent Astor
 		name = newengland.107.b
 		set_country_flag = NEE_FEDS_APPOINTED
+		set_country_flag = NEE_extremist_government
 		add_political_power = 35
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.01 }
 		add_stability = 0.03
@@ -6331,6 +6360,7 @@ country_event = { # Feds appointed
 	
 	option = { # Harold Stirling Vanderbilt
 		name = newengland.107.c
+		set_country_flag = NEE_extremist_government
 		add_political_power = 20
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.04 }
 		add_stability = 0.02
@@ -6353,6 +6383,7 @@ country_event = { # Feds appointed
 	
 	option = { # William Kissam Vanderbilt
 		name = newengland.107.e
+		set_country_flag = NEE_extremist_government
 		add_political_power = 15
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.05 }
 		add_stability = 0.02
@@ -6387,6 +6418,7 @@ country_event = { # Federalist Party Sworn in
 
 	option = { # Swearing in
 		name = newengland.1070.a
+		set_country_flag = NEE_extremist_government
 		set_politics = {
 			ruling_party = authoritarian_democrat
 			election_frequency = 48
@@ -6643,6 +6675,7 @@ country_event = { # John Jacob Astor
 		name = newengland.1160.b
 		add_political_power = -20
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.01 }
+		set_country_flag = NEE_extremist_government
 		hidden_effect = {
 			create_country_leader = {
 				name = "John Jacob Astor"
@@ -6748,6 +6781,7 @@ country_event = { # Out of the Frying Pot
 			logistics_skill = 3
 		}
 		set_country_flag = NEE_Radicals_Win
+		set_country_flag = NEE_extremist_government
 		add_political_power = 20
 		add_popularity = { ideology = market_liberal popularity = 0.04 }
 		add_popularity = { ideology = paternal_autocrat popularity = 0.03 }
@@ -6785,6 +6819,7 @@ country_event = { # Radical Split
 			}
 		}
 		name = newengland.120.a
+		set_country_flag = NEE_extremist_government
 		add_political_power = 20
 		set_politics = {
 			ruling_party = national_populist
@@ -6855,6 +6890,7 @@ country_event = { # Remnant Leader Election
 
 	option = { # Albert Jay Nock
 		name = newengland.121.a
+		set_country_flag = NEE_extremist_government
 		add_political_power = 20
 		create_country_leader = {
 			name = "Albert Jay Nock"
@@ -6879,6 +6915,7 @@ country_event = { # Remnant Leader Election
 	}
 	option = { # Robert McCormick
 		name = newengland.121.b
+		set_country_flag = NEE_extremist_government
 		add_political_power = 20
 		create_country_leader = {
 			name = "Robert McCormick"
@@ -8701,6 +8738,7 @@ country_event = {# Lovecraft takes over!
 			ruling_party = national_populist
 		}
 		set_capital = 935
+		set_country_flag = NEE_extremist_government
 		remove_all_ministers = yes
 		add_ideas = {
 			NEE_HP_Lovecraft_hog_npo
